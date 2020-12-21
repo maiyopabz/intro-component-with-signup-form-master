@@ -11,6 +11,7 @@ body {
   font-family: "Poppins", sans-serif;
   
   
+  
 }
 /* Here is the  settings to put all content in the middle with margin auto all around in container */
 .container {
@@ -19,9 +20,9 @@ body {
   justify-content: center;
   flex-wrap: wrap;
   max-width: 1200px;
-  padding: 20px;
   min-height: 100vh;
   margin: 0 auto;
+  
  
 }
 
@@ -43,7 +44,7 @@ p {
 .box {
   background-color: #fff;
   border-radius: 5px;
-  padding: 20px;
+  padding: 30px;
   box-shadow: 0 6px rgba(0, 0, 0, 0.3);
   margin-bottom: 20px;
   text-align: center;
@@ -57,7 +58,21 @@ p {
 
 .box-blue {
   background-color: hsl(248, 32%, 49%);
+  padding: 15px;
   
+}
+.form-control{
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.form-control small {
+  position: absolute;
+  bottom: -24px;
+  right: 0;
+  text-align: right;
+  opacity: 0;
+  color: hsl(0, 100%, 74%);
 }
 
 input {
@@ -79,31 +94,65 @@ input:active {
 }
 
 input:focus {
-  border: 2px solid hsl(248, 32%, 49%);
+  border: 1.3px solid hsl(248, 32%, 49%);
   outline: none;
 }
 
 button {
+ 
+  
   width: 100%;
   margin: 0, auto;
-  padding: 20px;
+  padding: 15px 25px;
   border: hsl(154, 59%, 51%);;
   background-color: hsl(154, 59%, 51%);
   border-radius: 5px;
+  box-shadow: 0 2px  hsl(154, 59%, 51%);
   color: #fff;
+  cursor: pointer;
   font-size: 15px;
   font-weight: 600;
-}
-
-
-.terms {
+  text-transform: uppercase;
   display: block;
-  margin: 10px;
-  padding: 10px;
-  color: hsl(246, 25%, 77%);
+  letter-spacing: 1px;
+  
 }
 
-.terms a {
-  color: hsl(0, 100%, 74%);
+button:focus {
+  outline: none;
 }
 
+button:active {
+  border-bottom-width: 1px;
+  transform: translateY(2px);
+  box-shadow: 0 0  hsl(154, 59%, 51%);
+}
+
+
+
+
+small {
+  display: block;
+  color: #bbb;
+  font-size: 12px;
+  margin-top: 15px;
+  font-weight: 500;
+}
+
+small a {
+ color: hsl(0, 100%, 74%);
+ text-decoration: none;
+ font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    text-align: center;
+  }
+  p {
+    text-align: center;
+  }
+  .container {
+    flex-direction: column;
+  }
+}
