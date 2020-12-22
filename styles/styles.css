@@ -71,7 +71,7 @@ p {
   bottom: -24px;
   right: 0;
   text-align: right;
-  opacity: 0;
+  opacity: 1;
   color: hsl(0, 100%, 74%);
 }
 
