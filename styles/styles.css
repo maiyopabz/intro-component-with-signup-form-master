@@ -32,12 +32,12 @@ body {
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 45px;
   line-height: 50px;
 }
 
 p {
-  font-size: 15px;
+  font-size: 16px;
   opacity: 0.8;
 }
 
@@ -147,12 +147,28 @@ small a {
 
 @media screen and (max-width: 768px) {
   h1 {
+    justify-content: center;
     text-align: center;
+    font-size: 44px;
   }
+
   p {
+    justify-content: center;
     text-align: center;
   }
   .container {
     flex-direction: column;
+    
   }
+
+  .container .box__one {
+    padding-top: 120px;
+    
+  }
+
+  .box__one p {
+    font-size: 29px;
+  }
+
+  
 }
